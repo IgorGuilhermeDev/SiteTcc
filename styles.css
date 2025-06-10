@@ -5,6 +5,7 @@
 }
 
 :root {
+    
     --primary-color: #6366f1;
     --secondary-color: #8b5cf6;
     --accent-color: #f59e0b;
@@ -14,9 +15,34 @@
     --surface: #f9fafb;
     --border: #e5e7eb;
     --success: #10b981;
-    --gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    --gradient: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    --card-bg: #ffffff;
+    --nav-bg: rgba(255, 255, 255, 0.95);
+    --hero-gradient: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    --code-bg: #1e1e1e;
+    --terminal-header: #2d2d2d;
+}
+
+[data-theme="dark"] {
+    --primary-color: #818cf8;
+    --secondary-color: #a78bfa;
+    --accent-color: #fbbf24;
+    --text-primary: #f3f4f6;
+    --text-secondary: #9ca3af;
+    --background: #0f172a;
+    --surface: #1f2937;
+    --border: #374151;
+    --success: #34d399;
+    --gradient: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+    --card-bg: #1f2937;
+    --nav-bg: rgba(15, 23, 42, 0.95);
+    --hero-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    --code-bg: #000000;
+    --terminal-header: #1a1a1a;
 }
 
 body {
@@ -36,7 +62,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--nav-bg);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
     z-index: 1000;
@@ -110,7 +136,7 @@ body {
     min-height: 90vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    background: var(--hero-gradient);
     position: relative;
     overflow: hidden;
 }
@@ -123,7 +149,7 @@ body {
     right: 0;
     bottom: 0;
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23e2e8f0" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>') repeat;
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 .hero-container {
@@ -211,7 +237,7 @@ body {
 }
 
 .btn-secondary {
-    background: white;
+    background: var(--surface);
     color: var(--text-primary);
     border: 2px solid var(--border);
 }
@@ -220,6 +246,7 @@ body {
     border-color: var(--primary-color);
     color: var(--primary-color);
     transform: translateY(-2px);
+    background: var(--surface);
 }
 
 .btn-large {
@@ -277,7 +304,7 @@ body {
 }
 
 .feature-card {
-    background: white;
+    background: var(--card-bg);
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: var(--shadow);
@@ -310,7 +337,7 @@ body {
 }
 
 .game-details {
-    background: white;
+    background: var(--card-bg);
     padding: 3rem;
     border-radius: 1rem;
     box-shadow: var(--shadow);
@@ -363,7 +390,7 @@ body {
 }
 
 .developer-card {
-    background: white;
+    background: var(--card-bg);
     padding: 3rem;
     border-radius: 1rem;
     box-shadow: var(--shadow);
@@ -437,7 +464,7 @@ body {
 }
 
 .feedback-card {
-    background: white;
+    background: var(--card-bg);
     padding: 3rem;
     border-radius: 1rem;
     box-shadow: var(--shadow);
@@ -480,7 +507,7 @@ body {
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    background: var(--surface);
+    background: var(--background);
     border-radius: 0.5rem;
     border: 1px solid var(--border);
 }
@@ -501,10 +528,11 @@ body {
 }
 
 .footer {
-    background: var(--text-primary);
-    color: white;
+    background: var(--surface);
+    color: var(--text-primary);
     padding: 3rem 0;
     text-align: center;
+    border-top: 1px solid var(--border);
 }
 
 .footer-content {
@@ -529,23 +557,24 @@ body {
 .footer-brand {
     font-size: 1.5rem;
     font-weight: 700;
+    color: var(--text-primary);
 }
 
 .footer-text {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--text-secondary);
     max-width: 400px;
     margin-bottom: 1rem;
 }
 
 .footer .status-badge {
     background: rgba(251, 191, 36, 0.2);
-    color: #fbbf24;
+    color: var(--accent-color);
     border-color: rgba(251, 191, 36, 0.3);
 }
 
 .download-section {
     padding: 4rem 0 6rem 0;
-    background: #fafafa;
+    background: var(--background);
 }
 
 .download-hero {
@@ -558,17 +587,17 @@ body {
 }
 
 .download-card-main {
-    background: white;
+    background: var(--card-bg);
     border-radius: 12px;
     padding: 2.5rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    border: 1px solid #e1e5e9;
+    border: 1px solid var(--border);
 }
 
 .download-info h3 {
     font-size: 2.25rem;
     font-weight: 600;
-    color: #333;
+    color: var(--text-primary);
     margin-bottom: 1rem;
 }
 
@@ -581,7 +610,7 @@ body {
 
 .version {
     font-size: 1.125rem;
-    color: #666;
+    color: var(--text-secondary);
     font-weight: 500;
 }
 
@@ -605,7 +634,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid var(--border);
 }
 
 .option-group:last-child {
@@ -614,7 +643,7 @@ body {
 
 .option-group label {
     font-weight: 600;
-    color: #555;
+    color: var(--text-primary);
     font-size: 0.95rem;
 }
 
@@ -623,13 +652,13 @@ body {
 }
 
 .os-selector {
-    background: white;
-    border: 2px solid #ddd;
+    background: var(--surface);
+    border: 2px solid var(--border);
     border-radius: 8px;
     padding: 0.75rem 2.5rem 0.75rem 1rem;
     font-size: 1rem;
     font-weight: 500;
-    color: #333;
+    color: var(--text-primary);
     cursor: pointer;
     transition: all 0.2s ease;
     appearance: none;
@@ -637,13 +666,13 @@ body {
 }
 
 .os-selector:hover {
-    border-color: #43a047;
+    border-color: var(--primary-color);
 }
 
 .os-selector:focus {
     outline: none;
-    border-color: #43a047;
-    box-shadow: 0 0 0 3px rgba(67, 160, 71, 0.1);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.1);
 }
 
 .select-wrapper::after {
@@ -652,13 +681,13 @@ body {
     right: 1rem;
     top: 50%;
     transform: translateY(-50%);
-    color: #666;
+    color: var(--text-secondary);
     font-size: 0.8rem;
     pointer-events: none;
 }
 
 .file-info {
-    color: #666;
+    color: var(--text-secondary);
     font-size: 0.95rem;
     font-weight: 500;
 }
@@ -671,41 +700,40 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.75rem;
-    background: linear-gradient(45deg, #43a047, #66bb6a);
+    background: var(--gradient);
     color: white;
     padding: 1rem 2.5rem;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
-    box-shadow: 0 4px 15px rgba(67, 160, 71, 0.3);
+    box-shadow: var(--shadow);
     transition: all 0.3s ease;
 }
 
 .download-btn:hover {
-    background: linear-gradient(45deg, #388e3c, #5cb85f);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(67, 160, 71, 0.4);
+    box-shadow: var(--shadow-lg);
 }
 
 .install-commands {
-    background: white;
+    background: var(--card-bg);
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    border: 1px solid #e1e5e9;
+    border: 1px solid var(--border);
     overflow: hidden;
 }
 
 .commands-header {
     padding: 1.5rem 2rem;
-    background: #f8f9fa;
-    border-bottom: 1px solid #e9ecef;
+    background: var(--background);
+    border-bottom: 1px solid var(--border);
 }
 
 .commands-header h4 {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #333;
+    color: var(--text-primary);
     margin: 0;
 }
 
@@ -736,7 +764,7 @@ body {
 
 .step-label {
     font-weight: 600;
-    color: #333;
+    color: var(--text-primary);
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
@@ -748,10 +776,10 @@ body {
 }
 
 .terminal-block {
-    background: #1e1e1e;
+    background: var(--code-bg);
     border-radius: 8px;
     overflow: hidden;
-    border: 1px solid #333;
+    border: 1px solid var(--border);
 }
 
 .terminal-header {
@@ -759,12 +787,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0.75rem 1rem;
-    background: #2d2d2d;
-    border-bottom: 1px solid #404040;
+    background: var(--terminal-header);
+    border-bottom: 1px solid var(--border);
 }
 
 .terminal-title {
-    color: #ccc;
+    color: var(--text-primary);
     font-size: 0.85rem;
     font-weight: 500;
 }
@@ -774,9 +802,9 @@ body {
     align-items: center;
     gap: 0.5rem;
     padding: 0.4rem 0.8rem;
-    background: #404040;
-    color: #e0e0e0;
-    border: none;
+    background: var(--surface);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
     border-radius: 6px;
     font-size: 0.75rem;
     font-weight: 500;
@@ -785,7 +813,7 @@ body {
 }
 
 .copy-command:hover {
-    background: #505050;
+    background: var(--primary-color);
     color: white;
 }
 
@@ -795,11 +823,12 @@ body {
 
 .terminal-body {
     padding: 1rem;
+    background: var(--code-bg);
 }
 
 .terminal-body code {
     display: block;
-    color: #f0f0f0;
+    color: var(--text-primary);
     font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
     font-size: 0.9rem;
     line-height: 1.4;
@@ -811,8 +840,8 @@ body {
     display: flex;
     gap: 1rem;
     padding: 1rem;
-    background: rgba(33, 150, 243, 0.05);
-    border: 1px solid rgba(33, 150, 243, 0.15);
+    background: rgba(96, 165, 250, 0.1);
+    border: 1px solid rgba(96, 165, 250, 0.2);
     border-radius: 8px;
     margin-top: 1rem;
 }
@@ -823,19 +852,19 @@ body {
 }
 
 .note-content {
-    color: #555;
+    color: var(--text-secondary);
     line-height: 1.5;
     font-size: 0.95rem;
 }
 
 .note-content strong {
-    color: #333;
+    color: var(--text-primary);
 }
 
 .coming-soon-content {
     text-align: center;
     padding: 3rem 2rem;
-    color: #666;
+    color: var(--text-secondary);
 }
 
 .coming-soon-icon {
@@ -846,7 +875,7 @@ body {
 .coming-soon-content h4 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #333;
+    color: var(--text-primary);
     margin-bottom: 1rem;
 }
 
@@ -866,16 +895,18 @@ body {
 
 .email-input {
     padding: 0.75rem 1rem;
-    border: 2px solid #ddd;
+    border: 2px solid var(--border);
     border-radius: 6px;
     font-size: 1rem;
     min-width: 250px;
     transition: border-color 0.2s ease;
+    background: var(--surface);
+    color: var(--text-primary);
 }
 
 .email-input:focus {
     outline: none;
-    border-color: #43a047;
+    border-color: var(--primary-color);
 }
 
 .notify-button {
@@ -897,17 +928,17 @@ body {
 .system-requirements {
     max-width: 1000px;
     margin: 4rem auto 0;
-    background: white;
+    background: var(--card-bg);
     border-radius: 12px;
     padding: 2.5rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    border: 1px solid #e1e5e9;
+    border: 1px solid var(--border);
 }
 
 .system-requirements h3 {
     font-size: 1.75rem;
     font-weight: 600;
-    color: #333;
+    color: var(--text-primary);
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -919,17 +950,17 @@ body {
 }
 
 .req-item {
-    background: #f8f9fa;
+    background: var(--card-bg);
     padding: 2rem;
     border-radius: 10px;
-    border: 2px solid #e9ecef;
+    border: 2px solid var(--border);
     transition: all 0.3s ease;
     position: relative;
 }
 
 .req-item.recommended {
-    border-color: #43a047;
-    background: rgba(67, 160, 71, 0.03);
+    border-color: var(--primary-color);
+    background: rgba(129, 140, 248, 0.1);
 }
 
 .rec-badge {
@@ -950,7 +981,7 @@ body {
 .req-item h4 {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #333;
+    color: var(--text-primary);
     margin-bottom: 1.5rem;
     text-align: center;
 }
@@ -963,11 +994,11 @@ body {
 
 .req-item li {
     padding: 0.5rem 0;
-    color: #555;
+    color: var(--text-secondary);
     position: relative;
     padding-left: 1.5rem;
     font-weight: 500;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .req-item li:last-child {
@@ -978,9 +1009,88 @@ body {
     content: '✓';
     position: absolute;
     left: 0;
-    color: #43a047;
+    color: var(--success);
     font-weight: bold;
     font-size: 1rem;
+}
+
+.theme-toggle {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    border-color: var(--primary-color);
+}
+
+.theme-toggle svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--text-primary);
+    transition: transform 0.5s ease;
+}
+
+.theme-toggle[data-theme="dark"] svg {
+    transform: rotate(360deg);
+}
+
+
+[data-theme="dark"] .hero::before {
+    opacity: 0.1;
+}
+
+[data-theme="dark"] .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    border-color: var(--primary-color);
+}
+
+[data-theme="dark"] .download-btn {
+    background: var(--gradient);
+    box-shadow: 0 4px 15px rgba(129, 140, 248, 0.3);
+}
+
+[data-theme="dark"] .download-btn:hover {
+    box-shadow: 0 6px 20px rgba(129, 140, 248, 0.4);
+}
+
+[data-theme="dark"] .terminal-body code {
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] .copy-command {
+    background: var(--surface);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+}
+
+[data-theme="dark"] .copy-command:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+[data-theme="dark"] .req-item.recommended {
+    background: rgba(129, 140, 248, 0.1);
+    border-color: var(--primary-color);
+}
+
+[data-theme="dark"] .mac-security-note {
+    background: rgba(96, 165, 250, 0.1);
+    border-color: rgba(96, 165, 250, 0.2);
 }
 
 @media (max-width: 768px) {
@@ -989,7 +1099,7 @@ body {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: white;
+        background-color: var(--surface);
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -1112,4 +1222,8 @@ body {
     .copy-command {
         align-self: flex-end;
     }
+}
+
+body * {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 } 
