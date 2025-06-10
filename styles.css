@@ -792,7 +792,7 @@ body {
 }
 
 .terminal-title {
-    color: var(--text-primary);
+    color: #e0e0e0;
     font-size: 0.85rem;
     font-weight: 500;
 }
@@ -828,7 +828,7 @@ body {
 
 .terminal-body code {
     display: block;
-    color: var(--text-primary);
+    color: #e0e0e0;
     font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
     font-size: 0.9rem;
     line-height: 1.4;
