@@ -543,6 +543,446 @@ body {
     border-color: rgba(251, 191, 36, 0.3);
 }
 
+.download-section {
+    padding: 4rem 0 6rem 0;
+    background: #fafafa;
+}
+
+.download-hero {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.download-card-main {
+    background: white;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e1e5e9;
+}
+
+.download-info h3 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.version-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.version {
+    font-size: 1.125rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.lts-badge {
+    background: linear-gradient(45deg, #43a047, #66bb6a);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.download-options {
+    margin-bottom: 2.5rem;
+}
+
+.option-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.option-group:last-child {
+    border-bottom: none;
+}
+
+.option-group label {
+    font-weight: 600;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.os-selector {
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 0.75rem 2.5rem 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    appearance: none;
+    min-width: 180px;
+}
+
+.os-selector:hover {
+    border-color: #43a047;
+}
+
+.os-selector:focus {
+    outline: none;
+    border-color: #43a047;
+    box-shadow: 0 0 0 3px rgba(67, 160, 71, 0.1);
+}
+
+.select-wrapper::after {
+    content: '▼';
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 0.8rem;
+    pointer-events: none;
+}
+
+.file-info {
+    color: #666;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.download-action {
+    text-align: center;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: linear-gradient(45deg, #43a047, #66bb6a);
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(67, 160, 71, 0.3);
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background: linear-gradient(45deg, #388e3c, #5cb85f);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(67, 160, 71, 0.4);
+}
+
+.install-commands {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e1e5e9;
+    overflow: hidden;
+}
+
+.commands-header {
+    padding: 1.5rem 2rem;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.commands-header h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.command-tabs {
+    min-height: 400px;
+}
+
+.command-section {
+    display: none;
+    padding: 2rem;
+}
+
+.command-section.active {
+    display: block;
+}
+
+.step-commands {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.command-step {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.step-label {
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.terminal-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.terminal-block {
+    background: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #333;
+}
+
+.terminal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: #2d2d2d;
+    border-bottom: 1px solid #404040;
+}
+
+.terminal-title {
+    color: #ccc;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.copy-command {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    background: #404040;
+    color: #e0e0e0;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.copy-command:hover {
+    background: #505050;
+    color: white;
+}
+
+.copy-command:active {
+    background: #43a047;
+}
+
+.terminal-body {
+    padding: 1rem;
+}
+
+.terminal-body code {
+    display: block;
+    color: #f0f0f0;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.mac-security-note {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(33, 150, 243, 0.05);
+    border: 1px solid rgba(33, 150, 243, 0.15);
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.note-icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.note-content {
+    color: #555;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.note-content strong {
+    color: #333;
+}
+
+.coming-soon-content {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: #666;
+}
+
+.coming-soon-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.coming-soon-content h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.coming-soon-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.notify-form {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.email-input {
+    padding: 0.75rem 1rem;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    min-width: 250px;
+    transition: border-color 0.2s ease;
+}
+
+.email-input:focus {
+    outline: none;
+    border-color: #43a047;
+}
+
+.notify-button {
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(45deg, #43a047, #66bb6a);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.notify-button:hover {
+    background: linear-gradient(45deg, #388e3c, #5cb85f);
+    transform: translateY(-1px);
+}
+
+.system-requirements {
+    max-width: 1000px;
+    margin: 4rem auto 0;
+    background: white;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e1e5e9;
+}
+
+.system-requirements h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.req-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.req-item {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.req-item.recommended {
+    border-color: #43a047;
+    background: rgba(67, 160, 71, 0.03);
+}
+
+.rec-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(45deg, #43a047, #66bb6a);
+    color: white;
+    padding: 0.25rem 1rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.req-item h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.req-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.req-item li {
+    padding: 0.5rem 0;
+    color: #555;
+    position: relative;
+    padding-left: 1.5rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.req-item li:last-child {
+    border-bottom: none;
+}
+
+.req-item li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #43a047;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
 @media (max-width: 768px) {
     .nav-menu {
         position: fixed;
@@ -606,7 +1046,10 @@ body {
 
     .game-details,
     .developer-card,
-    .feedback-card {
+    .feedback-card,
+    .download-card-main,
+    .install-commands,
+    .system-requirements {
         padding: 2rem;
     }
 
@@ -625,5 +1068,48 @@ body {
 
     .container {
         padding: 0 1rem;
+    }
+
+    .req-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .download-hero {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .select-wrapper {
+        align-self: stretch;
+    }
+    
+    .os-selector {
+        min-width: auto;
+        width: 100%;
+    }
+    
+    .notify-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .email-input {
+        min-width: auto;
+        width: 100%;
+    }
+    
+    .terminal-body code {
+        font-size: 0.8rem;
+        word-break: break-word;
+    }
+
+    .terminal-header {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+
+    .copy-command {
+        align-self: flex-end;
     }
 } 
