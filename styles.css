@@ -1129,12 +1129,17 @@ body {
 
     .hero-container {
         grid-template-columns: 1fr;
-        text-align: center;
         gap: 2rem;
+        text-align: center;
+    }
+
+    .hero-image {
+        order: -1;
+        margin: 0 auto;
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        display: none;
     }
 
     .hero-subtitle {
