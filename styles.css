@@ -625,6 +625,18 @@ body {
     letter-spacing: 0.5px;
 }
 
+.rolling-release-badge {
+    background: linear-gradient(45deg, #f59e0b, #f59e0b);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
 .download-options {
     margin-bottom: 2.5rem;
 }
