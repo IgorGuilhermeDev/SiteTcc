@@ -623,9 +623,10 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    transition: background 0.3s ease;
 }
 
-.rolling-release-badge {
+.lts-badge[data-type="rolling"] {
     background: linear-gradient(45deg, #f59e0b, #f59e0b);
     color: white;
     padding: 0.25rem 0.75rem;
@@ -1243,4 +1244,33 @@ body {
 
 body * {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.changelog {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+}
+
+.changelog h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.changelog-content {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.changelog-content ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+.changelog-content li {
+    margin: 0.5rem 0;
 } 
