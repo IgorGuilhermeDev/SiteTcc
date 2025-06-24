@@ -1,428 +1,1251 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light dark">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f172a">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="#ffffff"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#0f172a"
+    />
     <title>Script Hero - Aprenda Programação Jogando</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="logo.png" alt="Script Hero Logo" class="logo">
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#sobre-jogo" class="nav-link">O Jogo</a></li>
-                <li><a href="#download" class="nav-link">Download</a></li>
-                <li><a href="#desenvolvedor" class="nav-link">Desenvolvedor</a></li>
-                <li><a href="#feedback" class="nav-link">Feedback</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="logo.png" alt="Script Hero Logo" class="logo" />
         </div>
+        <ul class="nav-menu">
+          <li><a href="#sobre-jogo" class="nav-link">O Jogo</a></li>
+          <li><a href="#comandos" class="nav-link">Comandos</a></li>
+          <li><a href="#download" class="nav-link">Download</a></li>
+          <li><a href="#desenvolvedor" class="nav-link">Desenvolvedor</a></li>
+          <li><a href="#feedback" class="nav-link">Feedback</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
     </nav>
 
     <header class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Script Hero</h1>
-                <p class="hero-subtitle">Transforme o aprendizado de programação em uma aventura épica!</p>
-                <p class="hero-description">
-                    Um jogo sério desenvolvido para ajudar estudantes e professores no ensino e aprendizado de programação de forma interativa e divertida.
-                </p>
-                <div class="hero-status">
-                    <span class="status-badge">🚧 Em Desenvolvimento</span>
-                </div>
-                <div class="hero-buttons">
-                    <a href="#sobre-jogo" class="btn btn-primary">Conhecer o Jogo</a>
-                    <a href="#download" class="btn btn-secondary">🎮 Baixar Jogo</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="logo.png" alt="Script Hero" class="hero-logo">
-            </div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">Script Hero</h1>
+          <p class="hero-subtitle">
+            Transforme o aprendizado de programação em uma aventura épica!
+          </p>
+          <p class="hero-description">
+            Um jogo sério desenvolvido para ajudar estudantes e professores no
+            ensino e aprendizado de programação de forma interativa e divertida.
+          </p>
+          <div class="hero-status">
+            <span class="status-badge">🚧 Em Desenvolvimento</span>
+          </div>
+          <div class="hero-buttons">
+            <a href="#sobre-jogo" class="btn btn-primary">Conhecer o Jogo</a>
+            <a href="#download" class="btn btn-secondary">🎮 Baixar Jogo</a>
+          </div>
         </div>
+        <div class="hero-image">
+          <img src="logo.png" alt="Script Hero" class="hero-logo" />
+        </div>
+      </div>
     </header>
 
     <section id="sobre-jogo" class="game-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Sobre o Script Hero</h2>
-                <p class="section-subtitle">Um jogo educacional revolucionário para o ensino de programação</p>
-            </div>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">💻</div>
-                    <h3>Aprendizado Interativo</h3>
-                    <p>Aprenda programação através de desafios práticos e resolução de problemas em um ambiente gamificado.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Foco Educacional</h3>
-                    <p>Desenvolvido especificamente como ferramenta pedagógica para auxiliar professores no ensino de lógica de programação.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🏆</div>
-                    <h3>Progressão</h3>
-                    <p>Sistema de conquistas e níveis que motiva os estudantes a continuar aprendendo e evoluindo.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">🛠️</div>
-                    <h3>Tecnologia Java</h3>
-                    <p>Desenvolvido em Java com JavaFX, garantindo performance e compatibilidade multiplataforma.</p>
-                </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Sobre o Script Hero</h2>
+          <p class="section-subtitle">
+            Um jogo educacional revolucionário para o ensino de programação
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">💻</div>
+            <h3>Aprendizado Interativo</h3>
+            <p>
+              Aprenda programação através de desafios práticos e resolução de
+              problemas em um ambiente gamificado.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Foco Educacional</h3>
+            <p>
+              Desenvolvido especificamente como ferramenta pedagógica para
+              auxiliar professores no ensino de lógica de programação.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">🏆</div>
+            <h3>Progressão</h3>
+            <p>
+              Sistema de conquistas e níveis que motiva os estudantes a
+              continuar aprendendo e evoluindo.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">🛠️</div>
+            <h3>Tecnologia Java</h3>
+            <p>
+              Desenvolvido em Java com JavaFX, garantindo performance e
+              compatibilidade multiplataforma.
+            </p>
+          </div>
+        </div>
+
+        <div class="game-details">
+          <div class="detail-content">
+            <h3>O que é o Script Hero?</h3>
+            <p>
+              Script Hero é um jogo sério (serious game) desenvolvido com o
+              objetivo de tornar o aprendizado de programação mais envolvente e
+              efetivo. Através de uma narrativa cativante e desafios
+              progressivos, os jogadores desenvolvem habilidades fundamentais de
+              programação enquanto se divertem.
+            </p>
+
+            <h4>Principais Características:</h4>
+            <ul class="features-list">
+              <li>Interface intuitiva desenvolvida em JavaFX</li>
+              <li>Editor de código integrado com syntax highlighting</li>
+              <li>Desafios graduais de programação</li>
+              <li>Sistema de feedback imediato</li>
+              <li>Compatível com múltiplas plataformas</li>
+              <li>Focado em lógica de programação e algoritmos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="comandos" class="commands-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">📚 Documentação de Comandos</h2>
+          <p class="section-subtitle">
+            Guia completo dos comandos e mecânicas do Script Hero
+          </p>
+        </div>
+
+        <div class="docs-navigation">
+          <div class="docs-nav-item active" data-section="entities">
+            <span class="nav-icon">🎯</span>
+            <span>Entidades</span>
+          </div>
+          <div class="docs-nav-item" data-section="commands">
+            <span class="nav-icon">⚡</span>
+            <span>API de Comandos</span>
+          </div>
+          <div class="docs-nav-item" data-section="chapters">
+            <span class="nav-icon">📖</span>
+            <span>Capítulos</span>
+          </div>
+          <div class="docs-nav-item" data-section="languages">
+            <span class="nav-icon">💻</span>
+            <span>Linguagens</span>
+          </div>
+        </div>
+
+        <div class="docs-content">
+          <div class="docs-section active" id="entities">
+            <div class="docs-header">
+              <h3>🎯 Entidades do Jogo</h3>
+              <p>
+                Conheça todos os elementos que compõem o mundo do Script Hero.
+              </p>
             </div>
 
-            <div class="game-details">
-                <div class="detail-content">
-                    <h3>O que é o Script Hero?</h3>
-                    <p>
-                        Script Hero é um jogo sério (serious game) desenvolvido com o objetivo de tornar o aprendizado de programação 
-                        mais envolvente e efetivo. Através de uma narrativa cativante e desafios progressivos, os jogadores desenvolvem 
-                        habilidades fundamentais de programação enquanto se divertem.
-                    </p>
-                    
-                    <h4>Principais Características:</h4>
-                    <ul class="features-list">
-                        <li>Interface intuitiva desenvolvida em JavaFX</li>
-                        <li>Editor de código integrado com syntax highlighting</li>
-                        <li>Desafios graduais de programação</li>
-                        <li>Sistema de feedback imediato</li>
-                        <li>Compatível com múltiplas plataformas</li>
-                        <li>Focado em lógica de programação e algoritmos</li>
-                    </ul>
+            <div class="entities-grid">
+              <div class="entity-card">
+                <div class="entity-header">
+                  <div class="entity-icon">🎮</div>
+                  <h4>Jogador</h4>
                 </div>
+                <div class="entity-content">
+                  <div class="entity-description">
+                    <p>O Script Hero controlado pelo jogador.</p>
+                    <div class="entity-attributes">
+                      <h5>Atributos:</h5>
+                      <ul>
+                        <li>Posição (x, y) no grid</li>
+                        <li>Direção atual (UP, DOWN, LEFT, RIGHT)</li>
+                        <li>Inventário para itens coletados</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="entity-image">
+                    <img
+                      src="assets/images/script_hero_v1.png"
+                      alt="Script Hero - Jogador"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="entity-card">
+                <div class="entity-header">
+                  <div class="entity-icon">🖥️</div>
+                  <h4>Computador</h4>
+                </div>
+                <div class="entity-content">
+                  <div class="entity-description">
+                    <p>
+                      Objetivo principal dos níveis - computadores para
+                      interagir.
+                    </p>
+                    <div class="entity-types">
+                      <h5>Tipos:</h5>
+                      <ul>
+                        <li>
+                          <strong>Normal:</strong> Computador seguro (objetivo
+                          final)
+                        </li>
+                        <li>
+                          <strong>Infectado:</strong> Computador com vírus
+                          (Capítulo 2+)
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="entity-images-grid">
+                    <div class="entity-image-item">
+                      <img
+                        src="assets/images/computer.png"
+                        alt="Computador Normal"
+                      />
+                      <span>Computador Normal</span>
+                    </div>
+                    <div class="entity-image-item">
+                      <img
+                        src="assets/images/infected-computer.png"
+                        alt="Computador Infectado"
+                      />
+                      <span>Computador Infectado</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="entity-card">
+                <div class="entity-header">
+                  <div class="entity-icon">💾</div>
+                  <h4>Pendrive</h4>
+                </div>
+                <div class="entity-content">
+                  <div class="entity-description">
+                    <p>Item colecionável para objetivos secundários.</p>
+                    <div class="entity-function">
+                      <h5>Função:</h5>
+                      <ul>
+                        <li>Coletado usando <code>player.pickUp()</code></li>
+                        <li>Necessário para conquistar estrelas extras</li>
+                        <li>Pode estar em posições estratégicas</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="entity-image">
+                    <img src="assets/images/drive.png" alt="Pendrive" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="entity-card">
+                <div class="entity-header">
+                  <div class="entity-icon">🧱</div>
+                  <h4>Parede</h4>
+                </div>
+                <div class="entity-content">
+                  <div class="entity-description">
+                    <p>Obstáculo que bloqueia movimento do jogador.</p>
+                    <div class="entity-function">
+                      <h5>Características:</h5>
+                      <ul>
+                        <li>Impede movimento em todas as direções</li>
+                        <li>Forma labirintos e desafios</li>
+                        <li>Textura visual de parede</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="entity-image">
+                    <img src="assets/images/wall.png" alt="Parede" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="entity-card">
+                <div class="entity-header">
+                  <div class="entity-icon">🦠</div>
+                  <h4>Inimigo</h4>
+                </div>
+                <div class="entity-content">
+                  <div class="entity-description">
+                    <p>Entidades que causam dano ao jogador.</p>
+                  </div>
+                  <div class="entity-image">
+                    <img src="assets/images/enemy.png" alt="Inimigos" />
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="docs-section" id="commands">
+            <div class="docs-header">
+              <h3>⚡ API de Comandos do Jogador</h3>
+              <p>
+                Lista completa de métodos disponíveis para controlar o herói
+                programador.
+              </p>
+            </div>
+
+            <div class="commands-container">
+              <div class="command-category">
+                <div class="category-header">
+                  <h4>🎯 Movimento Básico</h4>
+                  <p>Comandos fundamentais para movimentação do jogador.</p>
+                </div>
+
+                <div class="command-examples">
+                  <div class="code-example">
+                    <div class="code-header">
+                      <span class="code-lang">Java/JavaScript</span>
+                      <button
+                        class="copy-code-btn"
+                        data-code="player.moveUp();"
+                      >
+                        📋
+                      </button>
+                    </div>
+                    <div class="code-block">
+                      <pre><code>// Movimento simples
+player.moveUp();     // Move 1 passo para cima
+player.moveDown();   // Move 1 passo para baixo  
+player.moveLeft();   // Move 1 passo para esquerda
+player.moveRight();  // Move 1 passo para direita
+
+// Movimento com múltiplos passos
+player.moveUp(3);    // Move 3 passos para cima
+player.moveRight(2); // Move 2 passos para direita</code></pre>
+                    </div>
+                  </div>
+
+                  <div class="code-example">
+                    <div class="code-header">
+                      <span class="code-lang">Python</span>
+                      <button
+                        class="copy-code-btn"
+                        data-code="player.move_up()"
+                      >
+                        📋
+                      </button>
+                    </div>
+                    <div class="code-block">
+                      <pre><code># Movimento simples
+player.move_up()     # Move 1 passo para cima
+player.move_down()   # Move 1 passo para baixo
+player.move_left()   # Move 1 passo para esquerda  
+player.move_right()  # Move 1 passo para direita
+
+# Movimento com múltiplos passos
+player.move_up(3)    # Move 3 passos para cima
+player.move_right(2) # Move 2 passos para direita</code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="command-category">
+                <div class="category-header">
+                  <h4>↗️ Movimento Diagonal</h4>
+                  <p>Comandos avançados para movimento diagonal eficiente.</p>
+                </div>
+
+                <div class="command-examples">
+                  <div class="code-example">
+                    <div class="code-header">
+                      <span class="code-lang">Java/JavaScript</span>
+                      <button
+                        class="copy-code-btn"
+                        data-code="player.moveAcross('UP', 'RIGHT');"
+                      >
+                        📋
+                      </button>
+                    </div>
+                    <div class="code-block">
+                      <pre><code>// Movimento diagonal simples
+player.moveAcross('UP', 'RIGHT');        // Noroeste
+player.moveAcross('DOWN', 'LEFT');       // Sudoeste
+
+// Movimento diagonal com múltiplos passos
+player.moveAcross('UP', 'RIGHT', 3); //3 passos</code></pre>
+                    </div>
+                  </div>
+
+                  <div class="code-example">
+                    <div class="code-header">
+                      <span class="code-lang">Python</span>
+                      <button
+                        class="copy-code-btn"
+                        data-code="player.move_across('UP', 'RIGHT')"
+                      >
+                        📋
+                      </button>
+                    </div>
+                    <div class="code-block">
+                      <pre><code># Movimento diagonal simples
+player.move_across('UP', 'RIGHT')        # Noroeste
+player.move_across('DOWN', 'LEFT')       # Sudoeste
+
+# Movimento diagonal com múltiplos passos
+player.move_across('UP', 'RIGHT', 3)     # 3 passos</code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="command-category">
+                <div class="category-header">
+                  <h4>🔄 Interações</h4>
+                  <p>Comandos para interagir com o ambiente do jogo.</p>
+                </div>
+
+                <div class="command-examples">
+                  <div class="code-example">
+                    <div class="code-header">
+                      <span class="code-lang">Java/JavaScript</span>
+                      <button
+                        class="copy-code-btn"
+                        data-code="player.pickUp();"
+                      >
+                        📋
+                      </button>
+                    </div>
+                    <div class="code-block">
+                      <pre><code>// Coleta item na posição atual
+player.pickUp();
+
+// Interage com computador na posição atual
+player.interact();
+
+// Verifica se computador tem vírus (Capítulo 2+)
+if (player.discover(firstComputer)) {
+    // Computador é seguro
+    player.interact();
+} else {
+    // Computador tem vírus, evitar
+}</code></pre>
+                    </div>
+                  </div>
+
+                  <div class="code-example">
+                    <div class="code-header">
+                      <span class="code-lang">Python</span>
+                      <button
+                        class="copy-code-btn"
+                        data-code="player.pick_up()"
+                      >
+                        📋
+                      </button>
+                    </div>
+                    <div class="code-block">
+                      <pre><code># Coleta item na posição atual
+player.pick_up()
+
+# Interage com computador na posição atual
+player.interact()
+
+# Verifica se computador tem vírus (Capítulo 2+)
+if player.discover(first_computer):
+    # Computador é seguro
+    player.interact()
+else:
+    # Computador tem vírus, evitar
+</code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="command-category">
+                <div class="category-header">
+                  <h4>🔍 Variáveis Especiais (Capítulo 2+)</h4>
+                  <p>
+                    Variáveis automáticas disponíveis em níveis com múltiplos
+                    computadores.
+                  </p>
+                </div>
+
+                <div class="command-examples">
+                  <div class="code-example">
+                    <div class="code-header">
+                      <span class="code-lang">Java/JavaScript</span>
+                      <button
+                        class="copy-code-btn"
+                        data-code="var firstComputer = level.getFirstComputer();"
+                      >
+                        📋
+                      </button>
+                    </div>
+                    <div class="code-block">
+                      <pre><code>// Variáveis automáticas
+var firstComputer = level.getFirstComputer();
+var secondComputer = level.getSecondComputer();
+
+// Exemplo de uso com condicionais
+if (player.discover(firstComputer)) {
+    // Primeiro computador é seguro
+    player.moveRight();
+    player.interact();
+} else {
+    // Primeiro computador tem vírus, ir para o segundo
+    player.moveLeft();
+    if (player.discover(secondComputer)) {
+        player.interact();
+    }
+}</code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="docs-section" id="chapters">
+            <div class="docs-header">
+              <h3>📖 Estrutura de Capítulos e Fases</h3>
+              <p>
+                Conheça a progressão de dificuldade e temas abordados em cada
+                capítulo.
+              </p>
+            </div>
+
+            <div class="chapters-container">
+              <div class="chapter-card">
+                <div class="chapter-header">
+                  <div class="chapter-number">01</div>
+                  <div class="chapter-info">
+                    <h4>📚 Capítulo 1: Fundamentos</h4>
+                    <p class="chapter-theme">Comandos básicos de programação</p>
+                  </div>
+                </div>
+
+                <div class="chapter-content">
+                  <div class="levels-grid">
+                    <div class="level-card">
+                      <div class="level-header">
+                        <h5>Fase 1.1</h5>
+                        <div class="level-difficulty">⭐ Básico</div>
+                      </div>
+                      <div class="level-details">
+                        <div class="level-stat">
+                          <span class="stat-label">Grid:</span>
+                          <span class="stat-value">10×10</span>
+                        </div>
+                        <div class="level-stat">
+                          <span class="stat-label">Objetivo:</span>
+                          <span class="stat-value">Chegar ao computador</span>
+                        </div>
+                        <div class="level-stat">
+                          <span class="stat-label">Elementos:</span>
+                          <span class="stat-value"
+                            >Paredes em L, 1 pendrive</span
+                          >
+                        </div>
+                        <div class="level-stat">
+                          <span class="stat-label">Máximo 3★:</span>
+                          <span class="stat-value">5 linhas de código</span>
+                        </div>
+                      </div>
+                      <div class="image-placeholder level-image">
+                        <img src="assets/images/levels/1-1.png" alt="Screenshot da Fase 1.1" />
+                      </div>
+                    </div>
+
+                    <div class="level-card">
+                      <div class="level-header">
+                        <h5>Fase 1.2</h5>
+                        <div class="level-difficulty">⭐ Básico</div>
+                      </div>
+                      <div class="level-details">
+                        <div class="level-stat">
+                          <span class="stat-label">Grid:</span>
+                          <span class="stat-value">12×12</span>
+                        </div>
+                        <div class="level-stat">
+                          <span class="stat-label">Novidade:</span>
+                          <span class="stat-value">1 inimigo</span>
+                        </div>
+                        <div class="level-stat">
+                          <span class="stat-label">Desafio:</span>
+                          <span class="stat-value">Evitar o inimigo</span>
+                        </div>
+                      </div>
+                      <div class="image-placeholder level-image">
+                        <img src="assets/images/levels/1-2.png" alt="Screenshot da Fase 1.2" />
+                      </div>
+                    </div>
+
+                    <div class="level-card">
+                      <div class="level-header">
+                        <h5>Fase 1.3</h5>
+                        <div class="level-difficulty">⭐⭐ Intermediário</div>
+                      </div>
+                      <div class="level-details">
+                        <div class="level-stat">
+                          <span class="stat-label">Grid:</span>
+                          <span class="stat-value">10×10</span>
+                        </div>
+                        <div class="level-stat">
+                          <span class="stat-label">Foco:</span>
+                          <span class="stat-value">Movimento diagonal</span>
+                        </div>
+                        <div class="level-stat">
+                          <span class="stat-label">Comando:</span>
+                          <span class="stat-value">moveAcross()</span>
+                        </div>
+                        <div class="level-stat">
+                          <span class="stat-label">Máximo 3★:</span>
+                          <span class="stat-value">4 linhas de código</span>
+                        </div>
+                      </div>
+                      <div class="image-placeholder level-image">
+                        <img src="assets/images/levels/1-3.png" alt="Screenshot da Fase 1.3" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chapter-card">
+                <div class="chapter-header">
+                  <div class="chapter-number">02</div>
+                  <div class="chapter-info">
+                    <h4>📚 Capítulo 2: Condicionais</h4>
+                    <p class="chapter-theme">
+                      Estruturas condicionais (if/else)
+                    </p>
+                  </div>
+                </div>
+
+                <div class="chapter-content">
+                  <div class="chapter-feature">
+                    <div class="feature-icon">🦠</div>
+                    <div class="feature-content">
+                      <h5>Mecânica Especial: Vírus Alternante</h5>
+                      <p>
+                        Os computadores alternam estado de vírus entre
+                        execuções, exigindo lógica condicional para identificar
+                        qual é seguro.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="levels-grid">
+                    <div class="level-card">
+                      <div class="level-header">
+                        <h5>Fase 2.1</h5>
+                        <div class="level-difficulty">⭐ Intermediário</div>
+                      </div>
+                      <div class="level-details">
+                        <div class="level-stat">
+                          <span class="stat-label">Grid:</span>
+                          <span class="stat-value">10×10</span>
+                        </div>
+                        <div class="level-stat">
+                          <span class="stat-label">Computadores:</span>
+                          <span class="stat-value"
+                            >2 (um seguro, um infectado)</span
+                          >
+                        </div>
+                        <div class="level-stat">
+                          <span class="stat-label">Variáveis:</span>
+                          <span class="stat-value"
+                            >firstComputer, secondComputer</span
+                          >
+                        </div>
+                        <div class="level-stat">
+                          <span class="stat-label">Mecânica:</span>
+                          <span class="stat-value"
+                            >Usar discover() para identificar</span
+                          >
+                        </div>
+                      </div>
+                      <div class="image-placeholder level-image">
+                        <img src="assets/images/levels/2-1.png" alt="Screenshot da Fase 2.1" />
+                      </div>
+                    </div>
+
+                    <div class="level-card">
+                      <div class="level-header">
+                        <h5>Fase 2.2</h5>
+                        <div class="level-difficulty">⭐⭐⭐ Avançado</div>
+                      </div>
+                      <div class="level-details">
+                        <div class="level-stat">
+                          <span class="stat-label">Grid:</span>
+                          <span class="stat-value">10×10 (sem paredes)</span>
+                        </div>
+                        <div class="level-stat">
+                          <span class="stat-label">Layout:</span>
+                          <span class="stat-value"
+                            >Computadores nos cantos</span
+                          >
+                        </div>
+                        <div class="level-stat">
+                          <span class="stat-label">Pendrive:</span>
+                          <span class="stat-value">Centro do grid</span>
+                        </div>
+                        <div class="level-stat">
+                          <span class="stat-label">Punição:</span>
+                          <span class="stat-value"
+                            >Falha se interagir com infectado</span
+                          >
+                        </div>
+                      </div>
+                      <div class="image-placeholder level-image">
+                        <img src="assets/images/levels/2-2.png" alt="Screenshot da Fase 2.2" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="objectives-system">
+              <h4>🏆 Sistema de Objetivos e Estrelas</h4>
+              <div class="objectives-grid">
+                <div class="objective-card primary">
+                  <div class="objective-icon">🎯</div>
+                  <h5>Objetivos Primários</h5>
+                  <ul>
+                    <li> Chegar ao computador</li>
+                  </ul>
+                  <div class="stars-display">⭐ 1 Estrela garantida</div>
+                </div>
+
+                <div class="objective-card secondary">
+                  <div class="objective-icon">⚡</div>
+                  <h5>Objetivos Secundários</h5>
+                  <ul>
+                    <li>Coletar pendrive</li>
+                    <li>Usar máximo X linhas</li>
+                    <li>Usar if/else</li>
+                  </ul>
+                  <div class="stars-display">⭐⭐ Estrelas extras</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="docs-section" id="languages">
+            <div class="docs-header">
+              <h3>💻 Linguagens Suportadas</h3>
+              <p>
+                O Script Hero suporta múltiplas linguagens de programação com
+                sintaxes adaptadas.
+              </p>
+            </div>
+
+            <div class="languages-grid">
+              <div class="language-card">
+                <div class="language-header">
+                  <div class="language-icon">☕</div>
+                  <h4>Java</h4>
+                  <div class="language-badge nativo">Nativo</div>
+                </div>
+                <div class="language-content">
+                  <div class="syntax-features">
+                    <h5>Características:</h5>
+                    <ul>
+                      <li>Sintaxe: <code>player.methodName();</code></li>
+                      <li>Comentários: <code>// comentário</code></li>
+                      <li>Condicionais: <code>if (condition) { }</code></li>
+                      <!-- <li>Ponto e vírgula obrigatório</li> -->
+                    </ul>
+                  </div>
+                  <div class="code-example-small">
+                    <pre><code>// Exemplo Java
+player.moveRight(3);
+if (player.discover(firstComputer)) {
+    player.interact();
+}</code></pre>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="language-card">
+                <div class="language-header">
+                  <div class="language-icon">🟨</div>
+                  <h4>JavaScript</h4>
+                  <div class="language-badge suporte">Suporte</div>
+                </div>
+                <div class="language-content">
+                  <div class="syntax-features">
+                    <h5>Características:</h5>
+                    <ul>
+                      <li>Sintaxe: <code>player.methodName()</code></li>
+                      <li>Comentários: <code>// comentário</code></li>
+                      <li>Condicionais: <code>if (condition) { }</code></li>
+                      <li>Ponto e vírgula opcional</li>
+                    </ul>
+                  </div>
+                  <div class="code-example-small">
+                    <pre><code>// Exemplo JavaScript
+player.moveRight(3);
+if (player.discover(firstComputer)) {
+    player.interact();
+}</code></pre>
+                  </div>
+                </div>
+              </div>
+
+              <div class="language-card">
+                <div class="language-header">
+                  <div class="language-icon">🐍</div>
+                  <h4>Python</h4>
+                  <div class="language-badge suporte">Suporte</div>
+                </div>
+                <div class="language-content">
+                  <div class="syntax-features">
+                    <h5>Características:</h5>
+                    <ul>
+                      <li>Sintaxe: <code>player.method_name()</code></li>
+                      <li>Comentários: <code># comentário</code></li>
+                      <li>Condicionais: <code>if condition:</code></li>
+                      <li>Indentação obrigatória</li>
+                    </ul>
+                  </div>
+                  <div class="code-example-small">
+                    <pre><code># Exemplo Python
+player.move_right(3)
+if player.discover(first_computer):
+    player.interact()</code></pre>
+                  </div>
+                </div>
+              </div> -->
+
+            <div class="editor-features">
+              <h4>🎨 Recursos do Editor</h4>
+              <div class="features-grid">
+                <div class="editor-feature">
+                  <div class="feature-icon">🎨</div>
+                  <h5>Syntax Highlighting</h5>
+                  <p>Destaque de sintaxe específico para cada linguagem</p>
+                </div>
+                <div class="editor-feature">
+                  <div class="feature-icon">💡</div>
+                  <h5>Autocompletar</h5>
+                  <p>Sugestões inteligentes dos métodos do jogador</p>
+                </div>
+                <div class="editor-feature">
+                  <div class="feature-icon">🚨</div>
+                  <h5>Detecção de Erros</h5>
+                  <p>Validação de sintaxe em tempo real</p>
+                </div>
+                <div class="editor-feature">
+                  <div class="feature-icon">📝</div>
+                  <h5>Numeração</h5>
+                  <p>Linhas numeradas para melhor orientação</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="download" class="download-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Download Script Hero</h2>
-                <p class="section-subtitle">Baixe e execute o jogo educacional para aprender programação</p>
-            </div>
-            
-            <div class="download-hero">
-                <div class="download-card-main">
-                    <div class="download-info">
-                        <h3>Script Hero</h3>
-                        <div class="version-info">
-                            <span class="version">v1.0.1</span>
-                            <span class="lts-badge">LTS</span>
-                        </div>
-                    </div>
-                    
-                    <div class="download-options">
-                        <div class="option-group">
-                            <label>Sistema:</label>
-                            <div class="select-wrapper">
-                                <select id="os-select" class="os-selector">
-                                    <option value="linux">🐧 Linux</option>
-                                    <option value="mac">🍎 macOS</option>
-                                    <option value="windows" disabled>🪟 Windows (em breve)</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="option-group">
-                            <label>Arquivo:</label>
-                            <span class="file-info">Java JAR (~11 MB)</span>
-                        </div>
-                    </div>
-                    
-                    <div class="download-action">
-                        <a href="assets/ScriptHero-v1.0.1.jar" download="ScriptHero-v1.0.1.jar" class="download-btn">
-                            ⬇️ Baixar para Linux
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="install-commands">
-                    <div class="commands-header">
-                        <h4>Instalação e execução:</h4>
-                    </div>
-                    
-                    <div class="command-tabs">
-                        <div class="command-section active" id="linux-install">
-                            <div class="step-commands">
-                                <div class="command-step">
-                                    <div class="step-label">1. Instalar Java:</div>
-                                    <div class="terminal-group">
-                                        <div class="terminal-block">
-                                            <div class="terminal-header">
-                                                <span class="terminal-title">Ubuntu/Debian</span>
-                                                <button class="copy-command" data-command="sudo apt update && sudo apt install openjdk-17-jdk">
-                                                    📋 Copiar
-                                                </button>
-                                            </div>
-                                            <div class="terminal-body">
-                                                <code>sudo apt update && sudo apt install openjdk-17-jdk</code>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="terminal-block">
-                                            <div class="terminal-header">
-                                                <span class="terminal-title">Fedora/RHEL</span>
-                                                <button class="copy-command" data-command="sudo dnf install java-17-openjdk">
-                                                    📋 Copiar
-                                                </button>
-                                            </div>
-                                            <div class="terminal-body">
-                                                <code>sudo dnf install java-17-openjdk</code>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="command-step">
-                                    <div class="step-label">2. Verificar Java:</div>
-                                    <div class="terminal-block">
-                                        <div class="terminal-header">
-                                            <span class="terminal-title">Terminal</span>
-                                            <button class="copy-command" data-command="java --version">
-                                                📋 Copiar
-                                            </button>
-                                        </div>
-                                        <div class="terminal-body">
-                                            <code>java --version</code>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="command-step">
-                                    <div class="step-label">3. Executar o jogo:</div>
-                                    <div class="terminal-block">
-                                        <div class="terminal-header">
-                                            <span class="terminal-title">Terminal</span>
-                                            <button class="copy-command" data-command="java -jar ScriptHero-&lt;versão&gt;.jar">
-                                                📋 Copiar
-                                            </button>
-                                        </div>
-                                        <div class="terminal-body">
-                                            <code>java -jar ScriptHero-&lt;versão&gt;.jar</code>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="command-section" id="mac-install">
-                            <div class="step-commands">
-                                <div class="command-step">
-                                    <div class="step-label">1. Instalar Java com Homebrew:</div>
-                                    <div class="terminal-block">
-                                        <div class="terminal-header">
-                                            <span class="terminal-title">Terminal</span>
-                                            <button class="copy-command" data-command="brew install openjdk@17">
-                                                📋 Copiar
-                                            </button>
-                                        </div>
-                                        <div class="terminal-body">
-                                            <code>brew install openjdk@17</code>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="command-step">
-                                    <div class="step-label">2. Verificar Java:</div>
-                                    <div class="terminal-block">
-                                        <div class="terminal-header">
-                                            <span class="terminal-title">Terminal</span>
-                                            <button class="copy-command" data-command="java --version">
-                                                📋 Copiar
-                                            </button>
-                                        </div>
-                                        <div class="terminal-body">
-                                            <code>java --version</code>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="command-step">
-                                    <div class="step-label">3. Executar o jogo:</div>
-                                    <div class="terminal-block">
-                                        <div class="terminal-header">
-                                            <span class="terminal-title">Terminal</span>
-                                            <button class="copy-command" data-command="java -jar ScriptHero-&lt;versão&gt;.jar">
-                                                📋 Copiar
-                                            </button>
-                                        </div>
-                                        <div class="terminal-body">
-                                            <code>java -jar ScriptHero-&lt;versão&gt;.jar</code>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="mac-security-note">
-                                    <div class="note-icon">💡</div>
-                                    <div class="note-content">
-                                        <strong>Nota de Segurança:</strong> Na primeira execução, você pode precisar permitir o aplicativo nas Configurações de Segurança do macOS.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="command-section" id="windows-install">
-                            <div class="coming-soon-content">
-                                <div class="coming-soon-icon">🚧</div>
-                                <h4>Windows em breve</h4>
-                                <p>Estamos preparando uma versão com instalador automático para Windows.</p>
-                                <div class="notify-form">
-                                    <input type="email" placeholder="seu@email.com" class="email-input">
-                                    <button class="notify-button">Receber notificação</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="system-requirements">
-                <h3>Requisitos do Sistema</h3>
-                <div class="req-grid">
-                    <div class="req-item">
-                        <h4>Mínimo</h4>
-                        <ul>
-                            <li>Java 17+</li>
-                            <li>100MB RAM</li>
-                            <li>100MB espaço</li>
-                            <li>1024×768</li>
-                        </ul>
-                    </div>
-                    <div class="req-item recommended">
-                        <div class="rec-badge">Recomendado</div>
-                        <h4>Otimizado</h4>
-                        <ul>
-                            <li>Java 17+ (OpenJDK)</li>
-                            <li>1GB+ RAM</li>
-                            <li>100MB+ espaço</li>
-                            <li>1920×1080+</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Download Script Hero</h2>
+          <p class="section-subtitle">
+            Baixe e execute o jogo educacional para aprender programação
+          </p>
         </div>
+
+        <div class="download-hero">
+          <div class="download-card-main">
+            <div class="download-info">
+              <h3>Script Hero</h3>
+              <div class="version-info">
+                <span class="version">v1.0.1</span>
+                <span class="lts-badge">LTS</span>
+              </div>
+            </div>
+
+            <div class="download-options">
+              <div class="option-group">
+                <label>Sistema:</label>
+                <div class="select-wrapper">
+                  <select id="os-select" class="os-selector">
+                    <option value="linux">🐧 Linux</option>
+                    <option value="mac">🍎 macOS</option>
+                    <option value="windows" disabled>
+                      🪟 Windows (em breve)
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="option-group">
+                <label>Arquivo:</label>
+                <span class="file-info">Java JAR (~11 MB)</span>
+              </div>
+            </div>
+
+            <div class="download-action">
+              <a
+                href="assets/ScriptHero-v1.0.1.jar"
+                download="ScriptHero-v1.0.1.jar"
+                class="download-btn"
+              >
+                ⬇️ Baixar para Linux
+              </a>
+            </div>
+          </div>
+
+          <div class="install-commands">
+            <div class="commands-header">
+              <h4>Instalação e execução:</h4>
+            </div>
+
+            <div class="command-tabs">
+              <div class="command-section active" id="linux-install">
+                <div class="step-commands">
+                  <div class="command-step">
+                    <div class="step-label">1. Instalar Java:</div>
+                    <div class="terminal-group">
+                      <div class="terminal-block">
+                        <div class="terminal-header">
+                          <span class="terminal-title">Ubuntu/Debian</span>
+                          <button
+                            class="copy-command"
+                            data-command="sudo apt update && sudo apt install openjdk-17-jdk"
+                          >
+                            📋 Copiar
+                          </button>
+                        </div>
+                        <div class="terminal-body">
+                          <code
+                            >sudo apt update && sudo apt install
+                            openjdk-17-jdk</code
+                          >
+                        </div>
+                      </div>
+
+                      <div class="terminal-block">
+                        <div class="terminal-header">
+                          <span class="terminal-title">Fedora/RHEL</span>
+                          <button
+                            class="copy-command"
+                            data-command="sudo dnf install java-17-openjdk"
+                          >
+                            📋 Copiar
+                          </button>
+                        </div>
+                        <div class="terminal-body">
+                          <code>sudo dnf install java-17-openjdk</code>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="command-step">
+                    <div class="step-label">2. Verificar Java:</div>
+                    <div class="terminal-block">
+                      <div class="terminal-header">
+                        <span class="terminal-title">Terminal</span>
+                        <button
+                          class="copy-command"
+                          data-command="java --version"
+                        >
+                          📋 Copiar
+                        </button>
+                      </div>
+                      <div class="terminal-body">
+                        <code>java --version</code>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="command-step">
+                    <div class="step-label">3. Executar o jogo:</div>
+                    <div class="terminal-block">
+                      <div class="terminal-header">
+                        <span class="terminal-title">Terminal</span>
+                        <button
+                          class="copy-command"
+                          data-command="java -jar ScriptHero-&lt;versão&gt;.jar"
+                        >
+                          📋 Copiar
+                        </button>
+                      </div>
+                      <div class="terminal-body">
+                        <code>java -jar ScriptHero-&lt;versão&gt;.jar</code>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="command-section" id="mac-install">
+                <div class="step-commands">
+                  <div class="command-step">
+                    <div class="step-label">1. Instalar Java com Homebrew:</div>
+                    <div class="terminal-block">
+                      <div class="terminal-header">
+                        <span class="terminal-title">Terminal</span>
+                        <button
+                          class="copy-command"
+                          data-command="brew install openjdk@17"
+                        >
+                          📋 Copiar
+                        </button>
+                      </div>
+                      <div class="terminal-body">
+                        <code>brew install openjdk@17</code>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="command-step">
+                    <div class="step-label">2. Verificar Java:</div>
+                    <div class="terminal-block">
+                      <div class="terminal-header">
+                        <span class="terminal-title">Terminal</span>
+                        <button
+                          class="copy-command"
+                          data-command="java --version"
+                        >
+                          📋 Copiar
+                        </button>
+                      </div>
+                      <div class="terminal-body">
+                        <code>java --version</code>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="command-step">
+                    <div class="step-label">3. Executar o jogo:</div>
+                    <div class="terminal-block">
+                      <div class="terminal-header">
+                        <span class="terminal-title">Terminal</span>
+                        <button
+                          class="copy-command"
+                          data-command="java -jar ScriptHero-&lt;versão&gt;.jar"
+                        >
+                          📋 Copiar
+                        </button>
+                      </div>
+                      <div class="terminal-body">
+                        <code>java -jar ScriptHero-&lt;versão&gt;.jar</code>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mac-security-note">
+                    <div class="note-icon">💡</div>
+                    <div class="note-content">
+                      <strong>Nota de Segurança:</strong> Na primeira execução,
+                      você pode precisar permitir o aplicativo nas Configurações
+                      de Segurança do macOS.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="command-section" id="windows-install">
+                <div class="coming-soon-content">
+                  <div class="coming-soon-icon">🚧</div>
+                  <h4>Windows em breve</h4>
+                  <p>
+                    Estamos preparando uma versão com instalador automático para
+                    Windows.
+                  </p>
+                  <div class="notify-form">
+                    <input
+                      type="email"
+                      placeholder="seu@email.com"
+                      class="email-input"
+                    />
+                    <button class="notify-button">Receber notificação</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="system-requirements">
+          <h3>Requisitos do Sistema</h3>
+          <div class="req-grid">
+            <div class="req-item">
+              <h4>Mínimo</h4>
+              <ul>
+                <li>Java 17+</li>
+                <li>100MB RAM</li>
+                <li>100MB espaço</li>
+                <li>1024×768</li>
+              </ul>
+            </div>
+            <div class="req-item recommended">
+              <div class="rec-badge">Recomendado</div>
+              <h4>Otimizado</h4>
+              <ul>
+                <li>Java 17+ (OpenJDK)</li>
+                <li>1GB+ RAM</li>
+                <li>100MB+ espaço</li>
+                <li>1920×1080+</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="desenvolvedor" class="developer-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Sobre o Desenvolvedor</h2>
-                <p class="section-subtitle">Conheça quem está por trás do Script Hero</p>
-            </div>
-            
-            <div class="developer-card">
-                <div class="developer-info">
-                    <h3>Igor Guilherme Almeida Rocha</h3>
-                    <p class="developer-role">Desenvolvedor Full Stack & Criador do Script Hero</p>
-                    
-                    <div class="developer-description">
-                        <p>
-                            Como desenvolvedor apaixonado por educação e tecnologia, criei o Script Hero com o objetivo de 
-                            revolucionar a forma como programação é ensinada e aprendida. O projeto surgiu da necessidade 
-                            de uma ferramenta que combinasse diversão e aprendizado efetivo.
-                        </p>
-                        
-                        <h4>Motivação do Projeto:</h4>
-                        <p>
-                            A ideia do Script Hero nasceu da observação de que muitos estudantes enfrentam dificuldades 
-                            no aprendizado de programação devido à abstração dos conceitos. O jogo visa tornar esses 
-                            conceitos mais tangíveis e envolventes através da gamificação.
-                        </p>
-                    </div>
-                    
-                    <div class="tech-stack">
-                        <h4>Tecnologias Utilizadas:</h4>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Java 17</span>
-                            <span class="tech-tag">JavaFX</span>
-                            <span class="tech-tag">Maven</span>
-                            <span class="tech-tag">RichTextFX</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Sobre o Desenvolvedor</h2>
+          <p class="section-subtitle">
+            Conheça quem está por trás do Script Hero
+          </p>
         </div>
+
+        <div class="developer-card">
+          <div class="developer-info">
+            <h3>Igor Guilherme Almeida Rocha</h3>
+            <p class="developer-role">
+              Desenvolvedor Full Stack & Criador do Script Hero
+            </p>
+
+            <div class="developer-description">
+              <p>
+                Como desenvolvedor apaixonado por educação e tecnologia, criei o
+                Script Hero com o objetivo de revolucionar a forma como
+                programação é ensinada e aprendida. O projeto surgiu da
+                necessidade de uma ferramenta que combinasse diversão e
+                aprendizado efetivo.
+              </p>
+
+              <h4>Motivação do Projeto:</h4>
+              <p>
+                A ideia do Script Hero nasceu da observação de que muitos
+                estudantes enfrentam dificuldades no aprendizado de programação
+                devido à abstração dos conceitos. O jogo visa tornar esses
+                conceitos mais tangíveis e envolventes através da gamificação.
+              </p>
+            </div>
+
+            <div class="tech-stack">
+              <h4>Tecnologias Utilizadas:</h4>
+              <div class="tech-tags">
+                <span class="tech-tag">Java 17</span>
+                <span class="tech-tag">JavaFX</span>
+                <span class="tech-tag">Maven</span>
+                <span class="tech-tag">RichTextFX</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="feedback" class="feedback-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Seu Feedback é Importante</h2>
-                <p class="section-subtitle">Ajude-nos a tornar o Script Hero ainda melhor</p>
-            </div>
-            
-            <div class="feedback-content">
-                <div class="feedback-card">
-                    <div class="feedback-icon">💬</div>
-                    <h3>Compartilhe sua Opinião</h3>
-                    <p>
-                        Como o Script Hero ainda está em desenvolvimento, sua opinião é fundamental para criarmos 
-                        a melhor experiência de aprendizado possível. Queremos saber suas ideias, sugestões e expectativas!
-                    </p>
-                    
-                    <div class="feedback-benefits">
-                        <div class="benefit-item">
-                            <span class="benefit-icon">✨</span>
-                            <span>Influence o desenvolvimento do jogo</span>
-                        </div>
-                        <div class="benefit-item">
-                            <span class="benefit-icon">🎯</span>
-                            <span>Ajude a criar uma ferramenta mais efetiva</span>
-                        </div>
-                        <div class="benefit-item">
-                            <span class="benefit-icon">🤝</span>
-                            <span>Faça parte da comunidade Script Hero</span>
-                        </div>
-                    </div>
-                    
-                    <div class="feedback-cta">
-                        <a href="#" id="feedback-form-link" class="btn btn-primary btn-large">
-                            📝 Dar Feedback no Google Forms
-                        </a>
-                        <p class="feedback-note">
-                            * O formulário será disponibilizado em breve. Enquanto isso, fique atento às atualizações!
-                        </p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Seu Feedback é Importante</h2>
+          <p class="section-subtitle">
+            Ajude-nos a tornar o Script Hero ainda melhor
+          </p>
         </div>
+
+        <div class="feedback-content">
+          <div class="feedback-card">
+            <div class="feedback-icon">💬</div>
+            <h3>Compartilhe sua Opinião</h3>
+            <p>
+              Como o Script Hero ainda está em desenvolvimento, sua opinião é
+              fundamental para criarmos a melhor experiência de aprendizado
+              possível. Queremos saber suas ideias, sugestões e expectativas!
+            </p>
+
+            <div class="feedback-benefits">
+              <div class="benefit-item">
+                <span class="benefit-icon">✨</span>
+                <span>Influence o desenvolvimento do jogo</span>
+              </div>
+              <div class="benefit-item">
+                <span class="benefit-icon">🎯</span>
+                <span>Ajude a criar uma ferramenta mais efetiva</span>
+              </div>
+              <div class="benefit-item">
+                <span class="benefit-icon">🤝</span>
+                <span>Faça parte da comunidade Script Hero</span>
+              </div>
+            </div>
+
+            <div class="feedback-cta">
+              <a
+                href="#"
+                id="feedback-form-link"
+                class="btn btn-primary btn-large"
+              >
+                📝 Dar Feedback no Google Forms
+              </a>
+              <p class="feedback-note">
+                * O formulário será disponibilizado em breve. Enquanto isso,
+                fique atento às atualizações!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="logo.png" alt="Script Hero" class="footer-logo-img">
-                    <span class="footer-brand">Script Hero</span>
-                </div>
-                <p class="footer-text">
-                    Transformando o ensino de programação através de jogos educacionais.
-                </p>
-                <div class="footer-status">
-                    <span class="status-badge">🚧 Projeto em Desenvolvimento</span>
-                </div>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="logo.png" alt="Script Hero" class="footer-logo-img" />
+            <span class="footer-brand">Script Hero</span>
+          </div>
+          <p class="footer-text">
+            Transformando o ensino de programação através de jogos educacionais.
+          </p>
+          <div class="footer-status">
+            <span class="status-badge">🚧 Projeto em Desenvolvimento</span>
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
     <script src="theme.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="github-release.js"></script>
-</body>
-</html> 
+  </body>
+</html>

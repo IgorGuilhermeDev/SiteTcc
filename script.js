@@ -260,4 +260,117 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     `;
     document.head.appendChild(style);
+
+
+    const themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+            document.body.classList.toggle('light-theme');
+            updateThemeIcon();
+            localStorage.setItem('theme', document.body.classList.contains('light-theme') ? 'light' : 'dark');
+        });
+    }
+
+    
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+        document.body.classList.add('light-theme');
+    }
+    
+    
+    function updateThemeIcon() {
+    }
+    
+    updateThemeIcon();
+
+    function initCommandsNavigation() {
+        
+        const navItems = document.querySelectorAll('.docs-nav-item');
+        const sections = document.querySelectorAll('.docs-section');
+        
+        
+        navItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                const targetSection = item.getAttribute('data-section');
+                
+                navItems.forEach(nav => nav.classList.remove('active'));
+                sections.forEach(section => section.classList.remove('active'));
+                
+
+                item.classList.add('active');
+                const targetElement = document.getElementById(targetSection);
+                if (targetElement) {
+                    targetElement.classList.add('active');
+                } else {
+                    console.error('Target element not found for:', targetSection);
+                }
+            });
+        });
+    }
+
+    
+    function initCodeCopyButtons() {
+        const copyButtons = document.querySelectorAll('.copy-code-btn');
+        
+        copyButtons.forEach(button => {
+            button.addEventListener('click', async () => {
+                const codeData = button.getAttribute('data-code');
+                
+                try {
+                    await navigator.clipboard.writeText(codeData);
+                    
+                    
+                    const originalText = button.textContent;
+                    button.textContent = '✅ Copiado!';
+                    button.style.background = '#22c55e';
+                    
+                    setTimeout(() => {
+                        button.textContent = originalText;
+                        button.style.background = '';
+                    }, 2000);
+                } catch (err) {                    
+                    const textArea = document.createElement('textarea');
+                    textArea.value = codeData;
+                    document.body.appendChild(textArea);
+                    textArea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textArea);
+                    
+                    
+                    const originalText = button.textContent;
+                    button.textContent = '✅ Copiado!';
+                    
+                    setTimeout(() => {
+                        button.textContent = originalText;
+                    }, 2000);
+                }
+            });
+        });
+    }
+
+    
+    function smoothScrollToCommands() {
+        const commandsLinks = document.querySelectorAll('a[href="#comandos"]');
+        
+        commandsLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.getElementById('comandos');
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    }
+
+    
+    setTimeout(() => {
+        initCommandsNavigation();
+        initCodeCopyButtons();
+        smoothScrollToCommands();
+        
+    }, 100);
 }); 
