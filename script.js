@@ -371,6 +371,15 @@ document.addEventListener('DOMContentLoaded', function() {
         initCommandsNavigation();
         initCodeCopyButtons();
         smoothScrollToCommands();
+        initPDFViewer();
         
     }, 100);
 }); 
+
+
+function initPDFViewer() {
+    const pdfViewer = document.getElementById('pdfViewer');
+    if (pdfViewer) {
+        console.log('PDF Viewer inicializado');
+    }
+} 
