@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-link');
     const navbar = document.querySelector('.navbar');
-    const feedbackLink = document.getElementById('feedback-form-link');
 
     hamburger.addEventListener('click', function() {
         hamburger.classList.toggle('active');
@@ -40,11 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             navbar.classList.remove('scrolled');
         }
-    });
-
-    feedbackLink.addEventListener('click', function(e) {
-        e.preventDefault();
-        alert('O formulário do Google Forms será disponibilizado em breve! \n\nEnquanto isso, você pode entrar em contato para dar seu feedback sobre o Script Hero.');
     });
 
     const osSelector = document.getElementById('os-select');
